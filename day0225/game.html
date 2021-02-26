@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+<Style>
+    /* css형식은 누구를(selector) 어떻게{} */
+body{ 
+    background-image: url(../images/image.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    }
+/* html문서내에 있는 모든 컨텐츠는 반드시 마크업해야 
+원하는 디자인 효과를 낼수 있다.. 따라서 주인공의 위치를 원하는곳에 
+두려면, html특징상 원래 불가능하다.. 
+하지만 css 를 이용하여, 이 한계를 극복할수있다..
+이 예제에서는 스타일 시트의 위치 지정 속성을 배워보자!! */
+.hero{
+    width:100px;
+  position:absolute; /* 절대위치 */
+  left:500px; /* x축 값을 500으로 */
+  top:500px /* y축 값을 500으로 */
+  
+}
+</Style>
+</head>
+<body >
+  <img src="../images/hero.jpg" class="hero">
+</body>
+</html>
